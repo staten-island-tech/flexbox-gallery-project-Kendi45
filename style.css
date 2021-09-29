@@ -1,0 +1,17 @@
+html,
+body * {
+  padding: 4;
+  margin: ;
+  box-sizing: border-box;
+}
+img {
+  height: 12rem;
+}
+.parent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box {
+  background-color: coral;
+}
