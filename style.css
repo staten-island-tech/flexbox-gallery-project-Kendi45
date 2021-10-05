@@ -10,7 +10,7 @@ body {
 .title {
   text-align: center;
   font-size: 10rem;
-  margin: 2rem;
+  margin-top: 3rem;
 }
 .row {
   font-size: 8rem;
@@ -31,11 +31,8 @@ body * {
 }
 
 .blogposts {
-  float: left;
-  width: 30%;
   background-color: white;
-  margin-bottom: 4rem;
-  margin-left: 2rem;
+  margin: 4rem;
   flex: 1;
   flex-wrap: wrap;
   flex-direction: column;
@@ -50,23 +47,11 @@ body * {
   font-size: 4rem;
 }
 
-.blog1 {
-  margin-right: 2rem;
-}
-
-.blog2 {
-  margin-right: 2rem;
-}
-
-.blog3 {
-  margin-right: 2rem;
-}
-
 img {
   border-radius: 2rem;
   width: 100%;
 }
 h3 {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
