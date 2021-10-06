@@ -32,15 +32,15 @@ body * {
 
 .blogposts {
   background-color: white;
-<<<<<<< HEAD
   margin-bottom: 6rem;
   margin-left: 4rem;
   margin-right: 4rem;
-=======
   margin: 4rem;
->>>>>>> 8d5ed9173237de52b6bd9d24c818d789456b15a0
+  margin-bottom: 4rem;
+  margin-left: 2rem;
   flex: 1;
   flex-wrap: wrap;
+  flex-direction: column;
   padding: 2rem;
   background-color: white;
   border-radius: 2rem;
@@ -50,7 +50,6 @@ body * {
 .blogposts:hover {
   transform: scale(1.09);
 }
-
 .price {
   text-align: center;
   font-size: 4rem;
