@@ -2,11 +2,7 @@ body {
   background-color: #c9ada7;
   font-family: "Bad Script", cursive;
 }
-.content {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 .title {
   text-align: center;
   font-size: 10rem;
@@ -31,7 +27,6 @@ body * {
 }
 
 .blogposts {
-  background-color: white;
   margin: 4rem;
   flex: 1;
   flex-wrap: wrap;
@@ -43,7 +38,6 @@ body * {
 }
 
 .price {
-  text-align: center;
   font-size: 4rem;
 }
 
