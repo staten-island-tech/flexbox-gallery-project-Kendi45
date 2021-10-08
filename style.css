@@ -1,7 +1,17 @@
+html,
+body,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+
 body {
   background-color: #c9ada7;
   font-family: "Bad Script", cursive;
 }
+
 .title {
   text-align: center;
   font-size: 10rem;
@@ -17,40 +27,34 @@ body {
   justify-content: space-around;
 }
 
-html,
-body * {
-  box-sizing: border-box;
-  padding: 4;
-  margin: 0;
-  font-size: 62.5%;
-}
-
 .blogposts {
-  background-color: white;
   margin-bottom: 6rem;
   margin-left: 4rem;
   margin-right: 4rem;
   flex: 1;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 2rem;
+  padding: 4rem;
   background-color: white;
   border-radius: 2rem;
   box-shadow: 1.5rem 1.5rem grey;
   transition: all 0.3s;
+  text-align: center;
 }
 .blogposts:hover {
   transform: scale(1.09);
   box-shadow: 1.5rem 1.5rem rgb(80, 80, 80);
 }
-.price {
+h2 {
   font-size: 4rem;
+  margin: 2rem;
 }
 
 img {
   border-radius: 2rem;
   width: 100%;
   opacity: 0.7;
+  transition: all 0.3s;
 }
 
 img:hover {
