@@ -12,6 +12,47 @@ body {
   background-color: #161616;
   font-size: 4rem;
 }
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.animation {
+  height: 2rem;
+  width: 2rem;
+  animation: loader 3s infinite;
+  border-radius: 2rem;
+  position: absolute;
+}
+
+@keyframes loader {
+  0% {
+    left: 50%;
+    bottom: 10%;
+    background-color: white;
+  }
+  25% {
+    left: 50%;
+    bottom: 20%;
+    background-color: #aec4fd;
+  }
+  50% {
+    left: 50%;
+    bottom: 30%;
+    background-color: #9aaddb;
+  }
+  75% {
+    left: 50%;
+    bottom: 20%;
+    background-color: #707fa5;
+  }
+  100% {
+    left: 50%;
+    bottom: 10%;
+    background-color: #536080;
+  }
+}
 
 .row {
   font-size: 8rem;
@@ -42,13 +83,10 @@ body {
 }
 img {
   width: 100%;
-}
-.img {
-  max-width: 100%;
   max-height: fit-content;
   transition: transform 1.7s;
 }
-.row .box:hover .image img {
+.box:hover img {
   transform: scale(1.1);
 }
 .image_text {
@@ -89,7 +127,7 @@ img {
 .image_text {
   align-items: center;
 }
-.row .box .image_text:hover {
+.image_text:hover {
   opacity: 1;
 }
 
@@ -97,7 +135,7 @@ img {
   width: 30%;
   transition: transform 0.5s;
 }
-.row .box .image_text .playbutton:hover {
+.image_text .playbutton:hover {
   transform: scale(1.3);
 }
 .title {
