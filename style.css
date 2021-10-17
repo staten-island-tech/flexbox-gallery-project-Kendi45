@@ -11,46 +11,15 @@ body {
   font-family: "Quicksand", sans-serif;
   background-color: #161616;
   font-size: 4rem;
-}
-.overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
+  animation: fadein 5s;
 }
 
-.animation {
-  height: 2rem;
-  width: 2rem;
-  animation: loader 3s infinite;
-  border-radius: 2rem;
-  position: absolute;
-}
-
-@keyframes loader {
-  0% {
-    left: 50%;
-    bottom: 10%;
-    background-color: white;
+@keyframes fadein {
+  from {
+    opacity: 0;
   }
-  25% {
-    left: 50%;
-    bottom: 20%;
-    background-color: #aec4fd;
-  }
-  50% {
-    left: 50%;
-    bottom: 30%;
-    background-color: #9aaddb;
-  }
-  75% {
-    left: 50%;
-    bottom: 20%;
-    background-color: #707fa5;
-  }
-  100% {
-    left: 50%;
-    bottom: 10%;
-    background-color: #536080;
+  to {
+    opacity: 1;
   }
 }
 
@@ -65,8 +34,8 @@ body {
   margin-bottom: 5rem;
 }
 .box {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   flex: 1;
   background-color: #242621;
   flex-wrap: wrap;
@@ -140,7 +109,6 @@ img {
 }
 .title {
   font-size: 2rem;
-  font-weight: bold;
   color: white;
   padding-top: 1.7rem;
 }
@@ -182,5 +150,171 @@ p {
   color: orange;
 }
 
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .number {
+    font-size: 2.5rem;
+  }
+  .box {
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 2.7rem;
+  }
+  .row {
+    margin: 0;
+  }
+  .button {
+    font-size: 1.3rem;
+  }
+}
 @media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+
+  .number {
+    font-size: 2.5rem;
+  }
+  .box {
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 2.7rem;
+  }
+  .row {
+    margin: 0;
+  }
+  .button {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title {
+    font-size: 1.1rem;
+  }
+  .description {
+    font-size: 1rem;
+    padding-top: 0.7rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .number {
+    font-size: 2rem;
+  }
+  .box {
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 1.7rem;
+  }
+  .row {
+    margin: 0;
+  }
+  .button {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .number {
+    font-size: 1.7rem;
+  }
+  .box {
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 2.5rem;
+  }
+  .button {
+    font-size: 1.3rem;
+  }
+  .description {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .title {
+    font-size: 1.3rem;
+  }
+  .number {
+    font-size: 2rem;
+  }
+  .box {
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 2rem;
+  }
+  .button {
+    font-size: 1.2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+    font-size: 1.4rem;
+  }
+  .number {
+    font-size: 1.5rem;
+  }
+  .box {
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 2rem;
+  }
+  .button {
+    font-size: 0.9rem;
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .number {
+    font-size: 2.7rem;
+  }
+  .button {
+    font-size: 1.5rem;
+  }
 }
