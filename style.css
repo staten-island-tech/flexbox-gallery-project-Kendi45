@@ -183,7 +183,7 @@ p {
 
 @media screen and (max-width: 860px) {
   .description {
-    height: 12.5rem;
+    height: 12.7rem;
   }
   .title {
     font-size: 1.7rem;
@@ -198,6 +198,7 @@ p {
   }
   .description {
     font-size: 1.5rem;
+    height: 16rem;
   }
   p {
     font-size: 1.4rem;
@@ -218,7 +219,18 @@ p {
     font-size: 1.3rem;
   }
 }
-
+@media screen and (max-width: 630px) {
+  .title {
+    height: 5vh;
+  }
+  .description {
+    height: 12vh;
+    font-size: 1.3rem;
+  }
+  .box {
+    padding: 1.3rem;
+  }
+}
 @media screen and (max-width: 540px) {
   .title {
     font-size: 1.1rem;
@@ -247,7 +259,7 @@ p {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 430px) {
   .title {
     font-size: 1.5rem;
   }
