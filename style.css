@@ -149,12 +149,17 @@ p {
   position: absolute;
   color: orange;
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1800px) {
+  .description {
+    height: 10rem;
+  }
+}
+@media screen and (max-width: 1080px) {
   .title {
     font-size: 2rem;
   }
   .description {
+    height: 12.5rem;
     font-size: 1.5rem;
   }
   p {
@@ -173,6 +178,18 @@ p {
   }
   .button {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .description {
+    height: 12.5rem;
+  }
+  .title {
+    font-size: 1.7rem;
+  }
+  .box {
+    padding: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -248,12 +265,13 @@ p {
   }
   .description {
     font-size: 1.2rem;
+    height: auto;
   }
   p {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
   .title {
     font-size: 1.3rem;
   }
